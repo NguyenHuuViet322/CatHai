@@ -16,6 +16,7 @@
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Lịch sử</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Một thoáng Cát Hải</span></a></li>
           <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Cát Hải trong thơ ca</span></a></li>
+          <li><a type="button" href="#testimonials" class="nav-link" data-bs-toggle="modal" data-bs-target="#video"><i class='bx bxs-videos'></i> <span>Hành trình cát hải</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>

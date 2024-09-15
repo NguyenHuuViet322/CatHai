@@ -81,6 +81,19 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
+  
+  let floatCreate = select('.floatCreate')
+  if (floatCreate) {
+    const togglefloatCreate = () => {
+      if (window.scrollY > 100) {
+        floatCreate.classList.add('active')
+      } else {
+        floatCreate.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', togglefloatCreate)
+    onscroll(document, togglefloatCreate)
+  }
 
   /**
    * Mobile nav toggle
@@ -252,5 +265,8 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+  
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 })()
